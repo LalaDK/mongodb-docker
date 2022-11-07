@@ -7,5 +7,5 @@ sudo mkdir -p /data/mongodb
 
 ## Running MongoDB
 ```sh
-docker run --name mongodb -d -v /data/mongodb:/data/db mongo
+docker run --name mongodb -d -v /data/mongodb:/data/db -p 27017:27017 mongo
 ```
