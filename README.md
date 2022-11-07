@@ -8,6 +8,12 @@ sudo mkdir -p /data/mongodb
 ## Create Docker container for MongoDB
 ```sh
 docker run --name mongodb -d -v /data/mongodb:/data/db -p 27017:27017 mongo
+
+# Optional restart policies
+--restart always
+--restart unless-stopped
+--restart on-failure[:max-retries]
+--restart no
 ```
 
 ## Restore database
